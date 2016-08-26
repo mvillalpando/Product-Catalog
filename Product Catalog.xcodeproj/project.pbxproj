@@ -14,6 +14,8 @@
 		683C90AD1D70E29300CE0430 /* Product_Catalog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 683C90AB1D70E29300CE0430 /* Product_Catalog.xcdatamodeld */; };
 		683C90AF1D70E29300CE0430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683C90AE1D70E29300CE0430 /* Assets.xcassets */; };
 		683C90B21D70E29300CE0430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683C90B01D70E29300CE0430 /* LaunchScreen.storyboard */; };
+		683C90BD1D70FAB100CE0430 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 683C90BC1D70FAB100CE0430 /* Intro.m */; };
+		683C90C01D70FC3A00CE0430 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 683C90BF1D70FC3A00CE0430 /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		683C90AE1D70E29300CE0430 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		683C90B11D70E29300CE0430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		683C90B31D70E29300CE0430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683C90BB1D70FAB100CE0430 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
+		683C90BC1D70FAB100CE0430 /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
+		683C90BE1D70FC3A00CE0430 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		683C90BF1D70FC3A00CE0430 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 			children = (
 				683C90A21D70E29300CE0430 /* AppDelegate.h */,
 				683C90A31D70E29300CE0430 /* AppDelegate.m */,
+				683C90BE1D70FC3A00CE0430 /* Declarations.h */,
+				683C90BF1D70FC3A00CE0430 /* Declarations.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -94,6 +102,8 @@
 			children = (
 				683C90A51D70E29300CE0430 /* Start.h */,
 				683C90A61D70E29300CE0430 /* Start.m */,
+				683C90BB1D70FAB100CE0430 /* Intro.h */,
+				683C90BC1D70FAB100CE0430 /* Intro.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -168,7 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				683C90BD1D70FAB100CE0430 /* Intro.m in Sources */,
 				683C90A71D70E29300CE0430 /* Start.m in Sources */,
+				683C90C01D70FC3A00CE0430 /* Declarations.m in Sources */,
 				683C90A41D70E29300CE0430 /* AppDelegate.m in Sources */,
 				683C90A11D70E29300CE0430 /* main.m in Sources */,
 				683C90AD1D70E29300CE0430 /* Product_Catalog.xcdatamodeld in Sources */,
