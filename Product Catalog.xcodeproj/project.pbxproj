@@ -66,6 +66,7 @@
 		683C909E1D70E29300CE0430 /* Product Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				6880F7B31D71F3EB0015B040 /* imgs */,
 				683C90B91D70E2FB00CE0430 /* Main */,
 				683C90BA1D70E30E00CE0430 /* Controllers */,
 				683C90A81D70E29300CE0430 /* Main.storyboard */,
@@ -106,6 +107,13 @@
 				683C90BC1D70FAB100CE0430 /* Intro.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6880F7B31D71F3EB0015B040 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +340,7 @@
 				683C90B81D70E29300CE0430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

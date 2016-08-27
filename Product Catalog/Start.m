@@ -19,6 +19,7 @@
 /**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initController];
     // Do any additional setup after loading the view, typically from a nib.
 }
 //-------------------------------------------------------------------------------
@@ -71,7 +72,7 @@
     }
     // Create a new view controller and pass suitable data.
     Intro *pageIntro            = [self.storyboard instantiateViewControllerWithIdentifier:@"Intro"];
-    pageIntro.lblIntro          = maIntroTitles[index]
+    pageIntro.lblIntro          = maIntroTitles[index];
     pageIntro.iPageIndex        = index;
     
     return pageIntro;
