@@ -26,8 +26,20 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated {
-    self.lblIntro.text  = maIntroTitles[self.iPageIndex];
+    self.lblIntro.text     = maIntroTitles[self.iPageIndex];
     self.imgIntro.image    = [UIImage imageNamed:maIntroImgs[self.iPageIndex]];
+//    
+//    if (self.iPageIndex == 0){
+//        self.btnProducts.hidden = NO;
+//        self.btnProducts.titleLabel.text = @"Saltar Intro";
+//    }
+        if (self.iPageIndex == 3){
+        self.btnProducts.hidden = NO;
     }
 
+}
+- (IBAction)btnProductsPressed:(id)sender {
+//    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+//    [self presentViewController:vc animated:YES completion:nil];
+}
 @end
