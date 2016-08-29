@@ -15,6 +15,7 @@
 @implementation Intro
 
 - (void)viewDidLoad {
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"fancy_deboss.png"]]];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -26,7 +27,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     self.lblIntro.text  = maIntroTitles[self.iPageIndex];
-   
+    self.imgIntro.image    = [UIImage imageNamed:maIntroImgs[self.iPageIndex]];
     }
 
 @end

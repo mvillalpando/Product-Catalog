@@ -18,6 +18,7 @@
 #pragma mark - Initialization methods
 /**********************************************************************************************/
 - (void)viewDidLoad {
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"fancy_deboss.png"]]];
     [super viewDidLoad];
     [self initController];
     // Do any additional setup after loading the view, typically from a nib.
@@ -29,9 +30,9 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    maIntroTitles   = [[NSMutableArray alloc] initWithObjects: @"Llevando los tesoros de la tierra a la gente del mundo...", @"La diferencia natual de la Tierra a la taza", @"El hongo maravilloso", nil];
+    maIntroTitles   = [[NSMutableArray alloc] initWithObjects: @"“Todo comenzó con una extraordinaria taza de café” ORGANO™ comenzó en 2008 en Richmond, BC, Canadá, en una pequeña tienda con tan sólo tres empleados.", @"ORGANO™ es una compañía de Mercadeo en Red global con la misión de difundir el conocimiento del Ganoderma en el mundo entero. En todo el mundo, la gente está despertando al increíble sabor y a los beneficios de las bebidas, nutracéuticos y productos para el cuidado personal de categoría gourmet premium de ORGANO™.", @"¿Qué hace que los productos ORGANO™ sean tan especiales?Simplemente, es el Ganoderma; el oro detrás de ORGANO. El Ganoderma es un alimento básico utilizado en Asia y está ganando notoriedad en el mundo occidental.", @"Una vez que los hongos Ganoderma han sido transformados, el polvo es añadido a la familia de productos ORGANO™, incluyendo nuestras bebidas, productos de cuidado personal y por supuesto, en su forma más pura se puede encontrar en nuestra línea de productos nutracéuticos.", nil];
     
-    maIntroImgs     = [[NSMutableArray alloc] initWithObjects: @"summer.png", @"avengers.png", @"iphone.png", nil];
+    maIntroImgs     = [[NSMutableArray alloc] initWithObjects: @"capuchino.jpg", @"woman.jpg", @"ganoderma.jpg", @"chocolate.jpg", nil];
     
     [self createPageViews];
 }
@@ -72,7 +73,6 @@
     }
     // Create a new view controller and pass suitable data.
     Intro *pageIntro            = [self.storyboard instantiateViewControllerWithIdentifier:@"Intro"];
-    pageIntro.lblIntro          = maIntroTitles[index];
     pageIntro.iPageIndex        = index;
     
     return pageIntro;
